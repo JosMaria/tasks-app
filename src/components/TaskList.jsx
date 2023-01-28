@@ -1,5 +1,5 @@
-import { useContext } from "react"
-import { TaskCard } from "./TaskCard"
+import { useContext } from 'react'
+import { TaskCard } from './TaskCard'
 import { TaskContext } from '../context/TaskContext'
 
 export const TaskList = () => {
@@ -12,14 +12,9 @@ export const TaskList = () => {
 
   return (
     <div>
-    {
-      tasks.map(task => 
-        <TaskCard 
-          key={task.id} 
-          task={task}
-        />
-      )
-    }
+      {
+        tasks.map(task => <TaskCard key={task.id} task={task} />)
+      }
     </div>
   )
 }
